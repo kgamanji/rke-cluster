@@ -26,7 +26,7 @@ This command create 2 Vagrant boxes using the Vagrantfile, with the following sp
 #### 2. Root SSH Access
 **_Optional: Create an SSH key-pair_**
 
-Verify if `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub` files exist. If these are not available create a new SSH key-pair using the following command and press <ENTER> for each prompt:
+Verify if `~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub` files exist. If these are not available create a new SSH key-pair using the following command and press `ENTER` for each prompt:
 ```bash
 ssh-keygen -t rsa -b 2048
 ```
