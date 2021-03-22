@@ -32,7 +32,8 @@ ssh-keygen -t rsa -b 2048
 ```
 
 **Copy SSH Keys**
-Copy the SSH key for each Vagrant box. This will allow the root access to the boxes without typing the password every time.
+
+Copy the SSH key for each Vagrant box. This allows root access to the boxes without typing the password every time.
 
 _Note:_ The password for root access is `vagrant`
 ```bash
