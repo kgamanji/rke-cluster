@@ -24,14 +24,8 @@ Vagrant.configure("2") do |config|
         v.memory = 2048
         v.cpus = 2
       end
-
-    config.vm.provision "shell", inline: <<-SHELL
-      # install Docker
-      zypper --non-interactive install docker #python3-docker-compose
-      systemctl enable docker
-      usermod -G docker -a $USER
-      systemctl restart docker
-    SHELL
+    # Bootstrap the machine
+    config.vm.provision "shell", path: "bootstrap.sh"
     end
   end
 end
